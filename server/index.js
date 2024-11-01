@@ -12,7 +12,7 @@ const paymentRoutes = require('./routes/paymentRoutes');
 const adminRoutes = require('./routes/admin');
 require('dotenv').config();
 const dbURI = process.env.dbURI;
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
   app.use(bodyParser.json());
   app.use(cors());
