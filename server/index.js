@@ -18,7 +18,7 @@ const PORT = process.env.PORT;
   app.use(express.json());
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
-  app.listen(PORT, () => console.log('Server is running on port:', PORT));
+  app.listen(PORT, () => console.log('Server is running Successfully'));
 }).catch((error) => console.error('Error connecting to DB:', error));
 
 
