@@ -1,0 +1,1 @@
+https://quickchart.io/chart?cht=qr&chs=300x300&chl=upi://pay?pa=shardaprinters1@okaxis%26am=5%26tn=Hello
