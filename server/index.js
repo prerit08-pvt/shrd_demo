@@ -17,8 +17,8 @@ const PORT = process.env.PORT;
   app.use(cors());
   app.use(express.json());
 
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
-  app.listen(PORT, () => console.log('Server is running Successfully'));
+mongoose.connect(dbURI).then(() => {
+  app.listen(PORT, () => console.log('Server is running on port:', PORT));
 }).catch((error) => console.error('Error connecting to DB:', error));
 
 
